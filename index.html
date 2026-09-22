@@ -1,22 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: lightblue;
-            padding: 50px;
-        }
-
-        h1 {
-            color: darkblue;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Paper & Ink Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This website is hosted using GitHub Pages.</p>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Paper & Ink<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-btn">Cart (<span>0</span>)</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <span class="badge">Curated Collection</span>
+      <h1>Discover Stories That Stay With You</h1>
+      <p>Explore handpicked classics, modern masterpieces, and indie bestsellers delivered straight to your cozy reading nook.</p>
+      <div class="hero-buttons">
+        <a href="#featured" class="btn primary-btn">Explore Catalog</a>
+        <a href="#categories" class="btn secondary-btn">Browse Genres</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Stack of books">
+    </div>
+  </header>
+
+  <!-- Featured Books Section -->
+  <section class="featured" id="featured">
+    <div class="section-title">
+      <h2>Trending Reads</h2>
+      <p>Hand-selected titles our community can't stop talking about</p>
+    </div>
+
+    <div class="book-grid">
+      <!-- Book 1 -->
+      <div class="book-card">
+        <div class="book-cover">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+          <div class="overlay">
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="genre">Fiction</span>
+          <h3>The Midnight Library</h3>
+          <p class="author">Matt Haig</p>
+          <div class="book-footer">
+            <span class="price">$18.99</span>
+            <span class="rating">★ 4.8</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-card">
+        <div class="book-cover">
+          <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+          <div class="overlay">
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="genre">Psychology</span>
+          <h3>Atomic Habits</h3>
+          <p class="author">James Clear</p>
+          <div class="book-footer">
+            <span class="price">$21.50</span>
+            <span class="rating">★ 4.9</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 3 -->
+      <div class="book-card">
+        <div class="book-cover">
+          <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+          <div class="overlay">
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="genre">Fantasy</span>
+          <h3>The Name of the Wind</h3>
+          <p class="author">Patrick Rothfuss</p>
+          <div class="book-footer">
+            <span class="price">$16.20</span>
+            <span class="rating">★ 4.7</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book 4 -->
+      <div class="book-card">
+        <div class="book-cover">
+          <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+          <div class="overlay">
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="genre">Sci-Fi</span>
+          <h3>Dune</h3>
+          <p class="author">Frank Herbert</p>
+          <div class="book-footer">
+            <span class="price">$19.99</span>
+            <span class="rating">★ 4.9</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Banner -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Join Our Book Club</h2>
+      <p>Subscribe to receive weekly recommendations, author interviews, and 15% off your first order.</p>
+      <form class="subscribe-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Paper & Ink Bookstore. Crafted for book lovers everywhere.</p>
+  </footer>
+
 </body>
 </html>
